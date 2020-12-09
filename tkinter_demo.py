@@ -1,9 +1,7 @@
-#!/Library/Frameworks/Python.framework/Versions/3.9/bin/python3
+#!/usr/bin/env python3
 
-# Filename:     template.py 
+# Filename:     tkinter_demo.py 
 # Author:       DMR
-
-# remember to use 'chmod u+x filename.py' to make the script executable
 
 import tkinter
 
