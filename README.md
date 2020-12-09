@@ -1,7 +1,7 @@
 # py
 
 ## Python Playground
-This repo is an online repository of sample Python3 programs. The main folder contains mostly code samples. The /docs folder contains useful reference information.
+This repo is an online repository of sample Python3 programs. The main folder contains mostly code samples. The [/docs](https://github.com/dmr-git/py/tree/main/docs) folder contains useful reference information.
 
 ### Naming Conventions
 Common file naming conventions include:
