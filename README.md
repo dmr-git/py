@@ -1,11 +1,10 @@
 # py
 
 ## Python Playground
-This repo is an online repository of sample Python3 programs.
+This repo is an online repository of sample Python3 programs. The main folder contains mostly code samples. The /docs folder contains useful reference information.
 
-The /docs folder contains useful reference information.
-
-### Program Groupings
+### Naming Conventions
+Common file naming conventions include:
 - Basic demonstrations of syntax (filenames: *_test.py)
 - Basic libraries of reusable functions (filenames: *_lib.py)
 
