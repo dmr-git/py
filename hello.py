@@ -5,6 +5,6 @@
 import os
 
 os.system("clear")
-print('Hello '+ os.environ['USER'] + '!\n')
+print('Hello '+ os.environ['USER'] + '!!!\n')
 
 
