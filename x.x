@@ -1,1 +1,1 @@
-Placeholder for useful python language references
+Placeholder for useful python language references and trivia
