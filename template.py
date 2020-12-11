@@ -3,4 +3,14 @@
 # Filename:     xx.py
 # Author:       DMR
 
-# remember to use 'chmod u+x filename.py' to make the script executable
+import sys
+
+def main():
+'''
+This program....
+'''
+#    if len(sys.argv) == 2 and sys.argv[1] == 'xxx':
+
+if __name__ == '__main__':
+    main()
+
