@@ -1,4 +1,8 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
+
+# Filename: hangman.py
+# Author: DMR
+
 # this is a game of hangman
 
 import random

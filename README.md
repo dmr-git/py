@@ -5,7 +5,6 @@ This repo is an online repository of sample Python3 programs. The main folder co
 
 ### Naming Conventions
 Common file naming conventions include:
-- Basic demonstrations of syntax (*_test.py)
 - Basic libraries of reusable functions (*_lib.py)
 
 ## License

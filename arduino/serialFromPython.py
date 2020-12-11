@@ -4,7 +4,7 @@
 # Author:       DMR
 
 '''
-Run serialFromPython.ino on the Arduino prior to running this programt
+Run serialFromPython.ino on the Arduino prior to running this program
 '''
 
 import serial
