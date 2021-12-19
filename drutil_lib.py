@@ -2,6 +2,8 @@
 
 # Filename:     drutil_lib.py
 # Author:       DMR
+# 
+# Test calls of these functions can be found in drutil_tst.py
 
 def ctof(c):
     ''' This function converts celcius to farenheight '''
@@ -22,3 +24,11 @@ def get_int(prompt = 'Please enter an integer: '):
             return(n)
         except ValueError:
             print('ERROR! Please enter an integer.')
+
+def comb(n,k):
+    ''' Combinations refer to the selection of n things taken k at a time without repetition,
+    such that the order of selection does not matter (unlike permutations).  '''
+
+    from math import factorial as fac
+    c = ( fac(n) // ( fac(k) * fac (n-k)))
+    return(c)

@@ -16,8 +16,8 @@ def pick_a_word():
 
 def get_guess(word):
     print_word_with_blanks(word)
-    print('Lives Ramaining: ' + str(lives_remaining))
-    guess = input(' Guess a letter or whole word? ')
+    print('Lives Remaining: ' + str(lives_remaining))
+    guess = input('Guess a letter or whole word? ')
 
     return(guess.lower())
 

@@ -19,3 +19,8 @@ print('int: {0:d}; hex: {0:x}; oct: {0:o}; bin: {0:b}'.format(1024))
 a = 'hi'
 b = 'there'
 print(f"a={a} b={b}")
+print("a=" + a + " b=" + b)
+print("a={}".format(a) + " b={}".format(b))
+
+ln = 123456789
+print(f"Long number in nice format = {ln:,}")
