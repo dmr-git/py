@@ -6,7 +6,7 @@ import os
 import sys
 
 def cat():
-    print('Meow')
+    print('Meow Meow')
 
 def default():
     print('Hello '+ os.environ['USER'] + '!\n')
@@ -17,6 +17,7 @@ def main():
         cat()
     else:
         default()
+    print('\n')    
 
 if __name__ == '__main__':
     main()
