@@ -3,6 +3,8 @@
 # Author: DMR
 # Filename: printexamples.py
 
+import solarized as c
+
 print('''Dennis says, "I'd say that rPI is fun!".''')
 print('This is one line.\nThis is a second line using a \\n character.')
 print('I like my Raspberry \u03c0!')
@@ -24,3 +26,5 @@ print("a={}".format(a) + " b={}".format(b))
 
 ln = 123456789
 print(f"Long number in nice format = {ln:,}")
+
+print(c.r+'Hello', c.b+'World\n'+c.reset)

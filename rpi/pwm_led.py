@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 # hook up a LED to GPIO.25
+# to exit the program cleanly, press <ctrl-c>
 
 import RPi.GPIO as GPIO
 

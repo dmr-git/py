@@ -3,7 +3,7 @@
 # Filename: dice.py 
 # Author: DMR
 
-# This program simulates dice throws until a quadruple 4 is thrown a
+# This program simulates dice throws until a quadruple 4 is thrown
 
 import random
 
