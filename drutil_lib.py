@@ -5,6 +5,10 @@
 # 
 # Test calls of these functions can be found in drutil_tst.py
 
+def say_hi():
+    ''' This is a simple test function '''
+    print('Hello World!')
+
 def ctof(c):
     ''' This function converts celcius to farenheight '''
     f = (c*1.8000) + 32.0000
