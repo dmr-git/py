@@ -1,4 +1,7 @@
-# exclude files
-*.swp
-.DS_Store
+# Files for git to ignore
 
+__pycache__/
+*.py[cod]
+
+.DS_Store
+.swp
