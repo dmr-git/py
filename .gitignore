@@ -1,7 +1,11 @@
 # Files for git to ignore
 
+# compiled python files
 __pycache__/
 *.py[cod]
 
+# vim temporary files
+*~
+*.sw[op]
+
 .DS_Store
-.swp
