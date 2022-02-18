@@ -1,20 +1,29 @@
 #!/usr/bin/env python3
 
-# place button input on pin10 and add a resistor inline on the power lead
+# place button input on BCM24 and a 10K resistor (pull down) to ground off same pin
+# other button pin to 3.3V
 
+from os import system
 import RPi.GPIO as GPIO
-import time
+from time import sleep
 
-def button_callback(channel):
-    print("Button pushed.")
-    time.sleep(1)
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(24, GPIO.IN)
 
-GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BOARD)
-GPIO.setup(10, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+count = 0
 
-GPIO.add_event_detect(10, GPIO.RISING, callback=button_callback)
+system('clear')
+print('Press Ctrl-C to exit...\n')
 
-message = input("Press enter to quit.\n\n")
-
-GPIO.cleanup()
+try:
+    while True:
+        inputValue = GPIO.input(24)
+        if (inputValue == True):
+            count = count + 1
+            print("Button pressed " + str(count) + " times.")
+            sleep(.3)
+        sleep(.01)
+except KeyboardInterrupt:
+    system('clear')
+    print('Cleaning up...\n')
+    GPIO.cleanup()
