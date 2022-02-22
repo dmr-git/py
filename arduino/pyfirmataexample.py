@@ -2,7 +2,7 @@
 
 from pyfirmata import Arduino
 from time import sleep
-board = Arduino('/dev/ttyACM0')
+board = Arduino('/dev/cu.usbmodem14201')
 while (1):
     board.digital[13].write(1)
     print("on")
