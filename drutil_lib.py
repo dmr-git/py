@@ -36,3 +36,11 @@ def comb(n,k):
     from math import factorial as fac
     c = ( fac(n) // ( fac(k) * fac (n-k)))
     return(c)
+
+def right_justify(string="Usage: right_justify(string, width)", width=70):
+    ''' Return a string right justified of length specified.  Default to 70. '''
+
+    msg = string.strip()
+    pad_count = width - len(msg)
+    msg = " " * pad_count + msg
+    return(msg)

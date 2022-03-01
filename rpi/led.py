@@ -3,6 +3,7 @@
 
 # LED is on pin 23, use a 270 Ohm resistor to GND
 # Switch is on pin 24, use a 10K pull-down resistor to GND
+# remember to 'sudo systemctk start pigpiod' in order to use pigpio library
 
 import sys
 import pigpio
