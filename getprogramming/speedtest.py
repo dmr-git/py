@@ -14,7 +14,7 @@ for i in range(10_000_000):
 
 end = time.perf_counter()
 
-print(f"Elapsed time in seconds: {(end - start):,.6f}")
-
+print(f"\nElapsed time in seconds: {(end - start):,.6f}")
+print()
 
 

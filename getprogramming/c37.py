@@ -3,7 +3,7 @@
 import tkinter
 window = tkinter.Tk()
 window.geometry("800x200")
-window.title("Mt First GUI")
+window.title("My First GUI")
 window.configure(background="grey")
 
 red = tkinter.Button(window, text="Red", bg="red")
