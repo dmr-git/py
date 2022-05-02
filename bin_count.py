@@ -23,7 +23,7 @@ def main():
     system("clear")
     GPIO.setmode(GPIO.BCM)
 
-    led = {0:25, 1:24, 2:23, 3:26, 4:6}
+    led = {0:26, 1:19, 2:13, 3:6, 4:5}
 
     # set the pins to Output
     for i in range(0,len(led)):
