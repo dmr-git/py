@@ -33,7 +33,13 @@ class Player(object):
             self.coords[2] += 10
             canvas.coords(self.piece, self.coords)
 
+
 def handle_key(event):
+
+    def play_again():
+        window.mainloop()
+           
+
     if event.char == 'w':
         player1.move("u")
     if event.char == 's':
@@ -57,6 +63,10 @@ def handle_key(event):
     if 2 in overlapping:
         canvas.create_text(100,100,font=("Arial",20), text="Tag!")
 
+        # pop up a button asking if they want to play again
+        btn = tk.Button(window, text="Play Again?", command=play_again)
+        btn.pack()
+
 
 window = tk.Tk()
 
@@ -75,7 +85,7 @@ center_y = int(screen_height/2 - window_height/2)
 window.title("Tag!")
 window.geometry(f'{window_width}x{window_height}+{center_x}+{center_y}')
 window.resizable(False, False)
-window.iconbitmap('/home/pi/code/py/getprogramming/python.ico')
+window.iconbitmap('./python.ico')
 
 canvas = tk.Canvas(window)
 canvas.pack(expand=1, fill='both')

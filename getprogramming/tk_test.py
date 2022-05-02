@@ -1,9 +1,17 @@
 #!/usr/bin/env python3
 
-import tkinter
+from tkinter import *
 
-window = tkinter.Tk()
-window.geometry("800x200")
+from tkinter import messagebox
+
+window = Tk()
+window.geometry("200x200+20+50")
 window.title("My First GUI")
-window.configure(background="grey")
+
+def hello_call_back():
+    msg = messagebox.showinfo("Hello Python", "Hellp World")
+
+B = Button(window, text="Hello", command=hello_call_back)
+B.place(x=50, y=50)
+
 window.mainloop()
