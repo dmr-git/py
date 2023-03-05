@@ -116,3 +116,12 @@ def frequencies(filename):
     wc = word_count(lst)
     return(wc)
 
+def sqrt_approx(num):
+    ''' uses old algorithm to return an approximation of a square root '''
+    g = num / 8
+    epsilon = .01
+    while True:
+        if (num - (g**2)) < epsilon:
+            return g
+        else:
+            g = ((g + (num/g))/2)
