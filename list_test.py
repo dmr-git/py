@@ -45,11 +45,11 @@ print('')
 
 # dictionary
 age = {
-        'dennis': 60,
-        'karen': 51,
-        'will': 22,
-        'ben': 20,
-        'claire': 17,
+        'dennis': 62,
+        'karen': 53,
+        'will': 23,
+        'ben': 21,
+        'claire': 18,
         }  
 
 for name in age:
@@ -91,6 +91,60 @@ family = {
             'age': 17,
             },
         }
+
+# print specific fields from the dictionary 
 for person, person_info in family.items():
     print(f"{person} middle: {person_info['middle']} age: {person_info['age']}")
 
+print('')
+
+acronyms = {
+        'LOL' : 'laugh out loud',
+        'IDK' : "I don't know"
+        }
+print(acronyms)
+
+# change an item based on the key
+acronyms['IDK'] = "Don't know"
+print(acronyms)
+
+# delete an item based on the key
+del acronyms['LOL']
+print(acronyms)
+
+print('')
+
+current_movies = {'The Grinch':'11:00am',
+                  'Rudolph':'1:00pm',
+                  'Frosty the Snowman':'3:00pm',
+                  'Christmas Vacation':'5:00pm'}
+
+print("We're showing the following movies:")
+for key in current_movies:
+    print(f"\t{key}")
+
+movie = input("Which movie do you want to go to? ")
+
+showtime = current_movies.get(movie)
+
+if showtime == None:
+    print("Not a valid movie")
+else:
+    print(f"{movie} is playing at {showtime}")
+
+print('')
+
+contacts = {
+        "number":4,
+        "students":
+        [
+            {"name":"Sarah Holderness", "email":"sarah@hogwarts.com"},
+            {"name":"Harry Potter", "email":"harry@hogwarts.com"},
+            {"name":"Hermione Granger", "email":"hermione@hogwarts.com"},
+            {"name":"Ron Weasley", "email":"ron@hogwarts.com"}
+            ]
+        }
+
+# print only the email addresses
+for contact in contacts["students"]:
+    print(contact["email"])

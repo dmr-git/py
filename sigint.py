@@ -2,7 +2,7 @@
 
 # Author: DMR
 
-# This file demonstrates <ctrl-c> as SIGINT.  It reaps for it so the program ignores it.
+# This file demonstrates <ctrl-c> as SIGINT.  It traps for it so the program ignores it.
 # Press <ctrl-\> to send a SIGQUIT to quit.
 
 import time

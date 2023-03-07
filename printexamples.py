@@ -33,3 +33,8 @@ ln = 123456789
 print(f"Long number in nice format = {ln:,}")
 
 print(c.r+'Hello', c.b+'World\n'+c.reset)
+
+nums = [1234.643, 754.3, 2.2, 223435454.223,65.888]
+for num in nums:
+    print(f"{num:15,.2f}")
+

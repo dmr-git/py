@@ -4,21 +4,25 @@
 
 import os
 import sys
-import re
+from drutils import get_int
 
 def func1():
-    # sample code here if parameter is passed
-    print('Hello '+ os.environ['USER'] + '!\n')
+    max_val = None
+    while max_val != 0:
+        max_val = get_int("Enter a positive integer: ")
+        i = 0
+        while i < max_val:
+            i += 1
+        print(i)
+
 
 def default():
     # main program goes here
-    
-
     print('Bye!\n')
 
 def main():
     os.system("clear")
-    if len(sys.argv) == 2 and sys.argv[1] == 'hello':
+    if len(sys.argv) == 1:
         func1()
     else:
         default()
