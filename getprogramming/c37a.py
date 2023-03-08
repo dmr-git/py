@@ -3,6 +3,9 @@
 import tkinter
 
 # button colors do not work on macosx, so below is a workaround
+# to use, I went to virtual environment and ran
+# python3 -m pip install tkmacosx
+
 from tkmacosx import Button as button
 
 def change_bg():

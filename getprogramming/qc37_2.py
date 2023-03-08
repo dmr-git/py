@@ -2,6 +2,7 @@
 
 import tkinter
 
+# create 4 window objects 
 w1 = tkinter.Tk()
 w2 = tkinter.Tk()
 w3 = tkinter.Tk()
@@ -23,6 +24,7 @@ w4.geometry("100x100")
 w4.title("")
 w4.configure(background="black")
 
+# start the program
 w1.mainloop()
 w2.mainloop()
 w3.mainloop()
