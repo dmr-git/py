@@ -46,7 +46,6 @@ print(my_df["Second"])
 print(type(my_df["Second"]))
 print()
 
-
 # where the data file is
 CSV_PATH = os.path.join('~/code', 'data', 'artwork_data.csv')
 
