@@ -2,42 +2,54 @@
 
 import random
 
+
 class Player(object):
     def __init__(self, name):
         self.name = name
         self.hand = []
+
     def get_name(self):
-        return(self.name)
+        return self.name
+
     def add_card_to_hand(self, card):
         if card != None:
             self.hand.append(card)
+
     def remove_card_from_hand(self, card):
         self.hand.remove(card)
+
     def hand_size(self):
         return len(self.hand)
 
+
 class CardDeck(object):
-    """ A deck of cards 2-9 od spades, hearts, diamonds, clubs """
+    """A deck of cards 2-9 od spades, hearts, diamonds, clubs"""
+
     def __init__(self):
         hearts = "2H,3H,4H,5H,6H,7H,8H,9H"
         spades = "2S,3S,4S,5S,6S,7S,8S,9S"
         diamonds = "2D,3D,4D,5D,6D,7D,8D,9D"
         clubs = "2C,3C,4C,5C,6C,7C,8C,9C"
-        self.deck = hearts.split(",") + spades.split(",") \
-                    + diamonds.split(",") + clubs.split(",")
-    
+        self.deck = (
+            hearts.split(",")
+            + spades.split(",")
+            + diamonds.split(",")
+            + clubs.split(",")
+        )
+
     def get_card(self):
-        """ Returns a random card, or None of none are left """
+        """Returns a random card, or None of none are left"""
         if len(self.deck) < 1:
-            return(None)
+            return None
         else:
             card = random.choice(self.deck)
             self.deck.remove(card)
-            return(card)
+            return card
+
     def compare_cards(self, card1, card2):
-        """ returns the larger card according to
-            (1) the larger of the numbers, or if equal
-            (2) spades > hearts > diamonds > clubs
+        """returns the larger card according to
+        (1) the larger of the numbers, or if equal
+        (2) spades > hearts > diamonds > clubs
         """
         if card1[0] > card2[0]:
             return card1
@@ -47,8 +59,10 @@ class CardDeck(object):
             return card1
         else:
             return card2
+
     def print_deck(self):
-        return(self.deck)
+        return self.deck
+
 
 name1 = input("What is the name of player 1? ")
 player1 = Player(name1)
@@ -85,5 +99,3 @@ while True:
         else:
             player1.add_card_to_hand(player2_card)
             player2.remove_card_from_hand(player2_card)
-
-

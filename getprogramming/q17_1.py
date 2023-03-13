@@ -5,7 +5,7 @@
 
 ans = 0
 
-for i in range(2,101,2):
-    if (i % 6 == 0):
-        ans+=1
-print(f"ans = {ans}")        
+for i in range(2, 101, 2):
+    if i % 6 == 0:
+        ans += 1
+print(f"ans = {ans}")

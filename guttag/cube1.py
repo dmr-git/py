@@ -5,8 +5,9 @@
 import os
 import sys
 
+
 def cube_root(num):
-    ''' Use guess and check to find the cube root of a number '''
+    """Use guess and check to find the cube root of a number"""
     guess = 0.0
     epsilon = 0.1
     increment = 0.0001
@@ -19,17 +20,18 @@ def cube_root(num):
     else:
         print(f"{guess:.3f} is close to the cube root of {num:,}")
 
+
 def main():
-    try: 
-        os.system('clear')
+    try:
+        os.system("clear")
         if len(sys.argv) == 2:
             argument = int(sys.argv[1])
             cube_root(argument)
         else:
-            print('Usage: cube_root <int>') 
+            print("Usage: cube_root <int>")
     except ValueError:
-        print('Usage: cube_root <int>') 
+        print("Usage: cube_root <int>")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
-

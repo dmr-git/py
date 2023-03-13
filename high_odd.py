@@ -8,6 +8,7 @@
 import os
 import sys
 
+
 def default():
     # main program goes here
     x = int(sys.argv[1])
@@ -18,10 +19,11 @@ def default():
         print(f"{x}\n")
     elif (y >= z) and (y % 2 == 1):
         print(f"{y}\n")
-    elif (z % 2 == 1):
+    elif z % 2 == 1:
         print(f"{z}\n")
     else:
         print("No odds.\n")
+
 
 def main():
     os.system("clear")
@@ -30,6 +32,6 @@ def main():
     else:
         default()
 
-if __name__ == '__main__':
-    main()
 
+if __name__ == "__main__":
+    main()

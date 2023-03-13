@@ -20,8 +20,8 @@ try:
             GPIO.output(led_pin, 1)
         else:
             GPIO.output(led_pin, 0)
-        sleep(.1)    
+        sleep(0.1)
 
 except KeyboardInterrupt:
     GPIO.cleanup()
-    print('\nCleaning up....')
+    print("\nCleaning up....")

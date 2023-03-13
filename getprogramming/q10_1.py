@@ -9,7 +9,7 @@ count = 3
 reps = len(word)
 
 while reps > 0:
-    t = t + (word[-reps:],)*count
+    t = t + (word[-reps:],) * count
     reps = reps - 1
 
 print(t)

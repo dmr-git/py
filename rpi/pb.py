@@ -10,13 +10,13 @@ from os import system
 from time import sleep
 
 # check arguments
-valid_args = ['hold', 'toggle', 'count']
+valid_args = ["hold", "toggle", "count"]
 if (len(sys.argv) == 2) and (sys.argv[1].lower() in valid_args):
     action = sys.argv[1].lower()
-    system('clear')
-    print('Press Ctrl-C to exit...\n')
+    system("clear")
+    print("Press Ctrl-C to exit...\n")
 else:
-    print(c.r+'Usage: gpio_pb.py [ hold | toggle | count ]'+c.reset)
+    print(c.r + "Usage: gpio_pb.py [ hold | toggle | count ]" + c.reset)
     sys.exit()
 
 # set up gpio pins
@@ -29,26 +29,28 @@ GPIO.output(led_pin, 0)
 
 # main program
 try:
-    if (action == "hold"): # holding PB down will keep the LED lit, releasing PB turns it off
+    if (
+        action == "hold"
+    ):  # holding PB down will keep the LED lit, releasing PB turns it off
         while True:
             GPIO.output(led_pin, GPIO.input(switch_pin))
-            sleep(.05)
-    elif (action == "toggle"): # pressing the PB will toggle the LED on/off
+            sleep(0.05)
+    elif action == "toggle":  # pressing the PB will toggle the LED on/off
         led_next_state = 1
         while True:
-            if (GPIO.input(switch_pin) == 1):
+            if GPIO.input(switch_pin) == 1:
                 GPIO.output(led_pin, led_next_state)
                 led_next_state = not led_next_state
-                sleep(.3)
-    elif (action == "count"):  # display count of clicks to stdout
+                sleep(0.3)
+    elif action == "count":  # display count of clicks to stdout
         count = 0
         while True:
             inputValue = GPIO.input(switch_pin)
-            if (inputValue == True):
+            if inputValue == True:
                 count = count + 1
                 print("Button pressed " + str(count) + " times.")
-                sleep(.3)
+                sleep(0.3)
 except KeyboardInterrupt:
-    system('clear')
-    print('Cleaning up...\n')
+    system("clear")
+    print("Cleaning up...\n")
     GPIO.cleanup()

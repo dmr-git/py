@@ -8,49 +8,56 @@ root.title("Simple Calculator")
 e = Entry(root, width=35, borderwidth=5)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
+
 def button_click(number):
     current = e.get()
     e.delete(0, END)
     e.insert(0, str(current) + str(number))
 
+
 def button_clr():
     e.delete(0, END)
+
 
 def button_add():
     first_number = e.get()
     if first_number:
         global f_num
         global math
-        math = 'addition'
+        math = "addition"
         f_num = int(first_number)
         e.delete(0, END)
+
 
 def button_subtract():
     first_number = e.get()
     if first_number:
         global f_num
         global math
-        math = 'subtract'
+        math = "subtract"
         f_num = int(first_number)
         e.delete(0, END)
+
 
 def button_multiply():
     first_number = e.get()
     if first_number:
         global f_num
         global math
-        math = 'multiply'
+        math = "multiply"
         f_num = int(first_number)
         e.delete(0, END)
+
 
 def button_divide():
     first_number = e.get()
     if first_number:
         global f_num
         global math
-        math = 'divide'
+        math = "divide"
         f_num = int(first_number)
         e.delete(0, END)
+
 
 def button_equal():
     second_num = e.get()
@@ -64,6 +71,7 @@ def button_equal():
             e.insert(0, f_num * int(second_num))
         if math == "divide":
             e.insert(0, f_num / int(second_num))
+
 
 # define the buttons
 button_1 = Button(root, text="1", padx=40, pady=20, command=lambda: button_click(1))

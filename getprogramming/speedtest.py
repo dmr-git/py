@@ -9,12 +9,9 @@ start = time.perf_counter()
 
 count = 0
 for i in range(10_000_000):
-
     count += 1
 
 end = time.perf_counter()
 
 print(f"\nElapsed time in seconds: {(end - start):,.6f}")
 print()
-
-

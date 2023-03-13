@@ -6,6 +6,7 @@ import os
 import sys
 from drutils import get_int
 
+
 def func1():
     max_val = None
     while max_val != 0:
@@ -18,7 +19,8 @@ def func1():
 
 def default():
     # main program goes here
-    print('Bye!\n')
+    print("Bye!\n")
+
 
 def main():
     os.system("clear")
@@ -27,6 +29,6 @@ def main():
     else:
         default()
 
-if __name__ == '__main__':
-    main()
 
+if __name__ == "__main__":
+    main()

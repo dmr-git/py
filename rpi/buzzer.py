@@ -14,18 +14,18 @@ buzzer_pin = 19
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(buzzer_pin, GPIO.OUT)
 
-system('clear')
-print('Press Ctrl-C to exit...\n')
+system("clear")
+print("Press Ctrl-C to exit...\n")
 
 try:
-        buzzer = GPIO.PWM(buzzer_pin, 440)  # set frequency to 440 (A)
-        buzzer.start(100)                   # set dutycycle to 100
-        while True:
-            freq_s = input('Enter frequency (0 to 1000): ')
-            freq = int(freq_s)
-            buzzer.ChangeFrequency(freq)
+    buzzer = GPIO.PWM(buzzer_pin, 440)  # set frequency to 440 (A)
+    buzzer.start(100)  # set dutycycle to 100
+    while True:
+        freq_s = input("Enter frequency (0 to 1000): ")
+        freq = int(freq_s)
+        buzzer.ChangeFrequency(freq)
 except KeyboardInterrupt:
-    system('clear')
-    print('\nCleaning up...\n')
+    system("clear")
+    print("\nCleaning up...\n")
     buzzer.stop()
     GPIO.cleanup()

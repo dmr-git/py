@@ -16,18 +16,24 @@ GPIO.setup(button_down, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 GPIO.setup(led_pin, GPIO.OUT)
 
+
 def button_released_callback(channel):
     global duty_cycle
-    print(f'Button {channel} was released.')
+    print(f"Button {channel} was released.")
     if channel == 21 and duty_cycle < 100:
-         duty_cycle += 12.5
-         myPWM.ChangeDutyCycle(duty_cycle)
+        duty_cycle += 12.5
+        myPWM.ChangeDutyCycle(duty_cycle)
     if channel == 16 and duty_cycle > 0:
-         duty_cycle -= 12.5
-         myPWM.ChangeDutyCycle(duty_cycle)
-           
-GPIO.add_event_detect(button_up, GPIO.RISING, callback=button_released_callback,bouncetime=50)
-GPIO.add_event_detect(button_down, GPIO.RISING, callback=button_released_callback,bouncetime=50)
+        duty_cycle -= 12.5
+        myPWM.ChangeDutyCycle(duty_cycle)
+
+
+GPIO.add_event_detect(
+    button_up, GPIO.RISING, callback=button_released_callback, bouncetime=50
+)
+GPIO.add_event_detect(
+    button_down, GPIO.RISING, callback=button_released_callback, bouncetime=50
+)
 
 # set up the frequency (how many cycles per second)
 myPWM = GPIO.PWM(led_pin, 100)
@@ -37,8 +43,8 @@ try:
     myPWM.start(duty_cycle)
 
     while True:
-        sleep(.05)
+        sleep(0.05)
 
 except KeyboardInterrupt:
     GPIO.cleanup()
-    print('\nCleaning up....')
+    print("\nCleaning up....")

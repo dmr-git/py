@@ -11,6 +11,5 @@ guess = ""
 
 while guess != my_num:
     guess = input("Guess a number between 1 and 14: ")
-    
-print(f"You guessed right, my number was {guess}")    
 
+print(f"You guessed right, my number was {guess}")

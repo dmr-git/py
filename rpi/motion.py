@@ -6,10 +6,10 @@
 
 from os import system
 from gpiozero import MotionSensor, LED
-from signal import pause                # waits until signal is received
+from signal import pause  # waits until signal is received
 
-system('clear')
-print('Press Ctrl-C to exit...\n')
+system("clear")
+print("Press Ctrl-C to exit...\n")
 
 led_pin = 23
 pir_pin = 17
@@ -23,6 +23,5 @@ pir.when_no_motion = led.off
 try:
     pause()
 except KeyboardInterrupt:
-    system('clear')
-    print('Cleaning up...\n')
-
+    system("clear")
+    print("Cleaning up...\n")

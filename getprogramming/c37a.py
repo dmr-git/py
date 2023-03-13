@@ -8,18 +8,23 @@ import tkinter
 
 from tkmacosx import Button as button
 
+
 def change_bg():
     cl = "red"
     window.configure(background=cl)
 
+
 def change_bg_white():
     window.configure(background="white")
+
 
 def change_bg_red():
     window.configure(background="red")
 
+
 def change_bg_green():
     window.configure(background="green")
+
 
 window = tkinter.Tk()
 window.geometry("800x200")

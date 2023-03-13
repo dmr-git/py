@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 def read_file(file):
     """
     file, a file object
@@ -17,7 +18,8 @@ def read_file(file):
         elif line_count % 2 == 1:
             second_every_2 += (stripped_line,)
         line_count += 1
-    return(first_every_2, second_every_2)
+    return (first_every_2, second_every_2)
+
 
 def sanitize(phones):
     """
@@ -32,7 +34,8 @@ def sanitize(phones):
         st = st.replace("(", "")
         st = st.replace(")", "")
         clean_string += (st,)
-    return(clean_string)
+    return clean_string
+
 
 def analyze_friends(names, phones, areacodes, places):
     """
@@ -52,7 +55,7 @@ def analyze_friends(names, phones, areacodes, places):
         for ph in phones:
             if ph[0:3] not in area_codes:
                 area_codes += (ph[0:3],)
-        return area_codes        
+        return area_codes
 
     def get_states(some_areacodes):
         """
@@ -67,13 +70,14 @@ def analyze_friends(names, phones, areacodes, places):
                 index = areacodes.index(ac)
                 if places[index] not in states:
                     states += (places[index],)
-        return(states)      
+        return states
 
     num_friends = len(names)
     unique_area_codes = get_unique_area_codes()
     unique_states = get_states(unique_area_codes)
     print("You have", num_friends, "friends.")
     print("They live in", unique_states)
+
 
 friends_file = open("phonedata.txt")
 (names, phones) = read_file(friends_file)
@@ -85,5 +89,3 @@ analyze_friends(names, clean_phones, areacodes, states)
 
 friends_file.close()
 areacodes_file.close()
-
-

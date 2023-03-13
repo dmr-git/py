@@ -13,6 +13,7 @@ GPIO.setmode(GPIO.BCM)
 led_pin = 23
 GPIO.setup(led_pin, GPIO.OUT)
 
+
 def main():
     system("clear")
     while True:
@@ -21,11 +22,11 @@ def main():
             break
         for i in range(blink_count):
             GPIO.output(led_pin, True)
-            sleep(.5)
+            sleep(0.5)
             GPIO.output(led_pin, False)
-            sleep(.5)
+            sleep(0.5)
     GPIO.cleanup()
 
-if __name__ == '__main__':
-    main()
 
+if __name__ == "__main__":
+    main()

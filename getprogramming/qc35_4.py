@@ -10,11 +10,8 @@ import random
 start = time.perf_counter()
 
 for i in range(10_000_000):
-    random.randint(0,1_000_000)
+    random.randint(0, 1_000_000)
 
 end = time.perf_counter()
 
 print(f"Elapsed time in seconds: {(end - start):,.6f}")
-
-
-

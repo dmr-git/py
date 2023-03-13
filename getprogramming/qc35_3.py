@@ -4,11 +4,14 @@
 
 import random
 
+
 class Coin(object):
     def __init__(self):
         self.sides = ["H", "T"]
+
     def flip(self):
-        return(random.choice(self.sides))
+        return random.choice(self.sides)
+
 
 coin = Coin()
 
@@ -23,4 +26,3 @@ for i in range(flips):
         tails += 1
 
 print(f"In {flips} coin flips there were {heads} heads {tails} tails.")
-

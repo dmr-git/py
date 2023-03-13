@@ -27,14 +27,14 @@ try:
         if read_up == 1 and duty_cycle < 100:
             duty_cycle += 12.5
             myPWM.ChangeDutyCycle(duty_cycle)
-            sleep(.5)
-           
+            sleep(0.5)
+
         read_down = GPIO.input(button_down)
         if read_down == 1 and duty_cycle > 0:
             duty_cycle -= 12.5
             myPWM.ChangeDutyCycle(duty_cycle)
-            sleep(.5)
+            sleep(0.5)
 
 except KeyboardInterrupt:
     GPIO.cleanup()
-    print('\nCleaning up....')
+    print("\nCleaning up....")

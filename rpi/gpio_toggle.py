@@ -25,4 +25,4 @@ try:
 
 except KeyboardInterrupt:
     GPIO.cleanup()
-    print('\nCleaning up....')
+    print("\nCleaning up....")

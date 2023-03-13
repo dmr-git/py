@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-''' List the current people in space.
+""" List the current people in space.
     HTTP request to api.open-notify.org/astros.json
     JSON is data format which is a mix of lists and dictionaries.
 
@@ -14,14 +14,13 @@
             ...
          ]
      }    
-'''
+"""
 
 import requests
 
-response = requests.get('http://api.open-notify.org/astros.json')
+response = requests.get("http://api.open-notify.org/astros.json")
 json = response.json()
 
 print("The people currently in space are:")
-for person in json['people']:
+for person in json["people"]:
     print(f"{person['name']:<25} {person['craft']:<20}")
-

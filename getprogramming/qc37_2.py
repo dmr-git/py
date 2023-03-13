@@ -2,7 +2,7 @@
 
 import tkinter
 
-# create 4 window objects 
+# create 4 window objects
 w1 = tkinter.Tk()
 w2 = tkinter.Tk()
 w3 = tkinter.Tk()

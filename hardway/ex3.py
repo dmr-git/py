@@ -2,7 +2,7 @@
 
 print("I will now count my chickens:")
 
-print("Hens:", 25 + 30 /6)
+print("Hens:", 25 + 30 / 6)
 print("Roosters:", 100 - 25 * 3 % 4)
 
 print("Now I will count the eggs:")
@@ -21,4 +21,3 @@ print("How about some more.")
 print("Is it greater", 5 > -2)
 print("Is it greater or equal?", 5 >= -2)
 print("Is it less than or equal?", 5 <= -2)
-

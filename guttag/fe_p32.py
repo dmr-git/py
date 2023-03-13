@@ -4,6 +4,6 @@
 # 'Your birth year is yyyy'
 from drutils import get_date
 
-bday = get_date('Enter your birthday in the format mm/dd/yyyy: ')
+bday = get_date("Enter your birthday in the format mm/dd/yyyy: ")
 
 print(f'Your birth year is {bday.split("/")[2]}')
