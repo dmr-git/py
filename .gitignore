@@ -6,6 +6,37 @@ __pycache__/
 
 # vim temporary files
 *~
-*.sw[op]
-
+*.sw[a-p]
 .DS_Store
+.swp
+[._]*.s[a-v][a-z]
+
+# VIM Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+
+# Auto generated tag files
+tags
+
+# persistent undo
+[._]*.un~
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# local history for VS Code
+.history/
+
+# Built VS Code Extensions
+*.vsix
+
+# charts
+*.svg
