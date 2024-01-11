@@ -8,6 +8,12 @@
 Library of useful utilities.
 """
 
+def banner(message, border='-'):
+    """Prints simple text with border rows"""
+    line = border * len(message)
+    print(line)
+    print(message)
+    print(line)
 
 def ctof(c):
     """Converts celcius to farenheight"""
@@ -68,6 +74,9 @@ def comb(n, k):
     c = fac(n) // (fac(k) * fac(n - k))
     return c
 
+def min_max(items):
+    """Return the nimumum and maximum values from a list or tuple"""
+    return min(items), max(items)
 
 def right_justify(string, width=70):
     """Return the passed string right justified of length specified.  Default to 70."""

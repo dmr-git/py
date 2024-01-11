@@ -11,10 +11,14 @@ def main():
     This is the main function.  It will be used to call the various examples.
     """
     from drutils import get_date
+    from drutils import min_max
 
     bday = get_date()
     print(bday)
 
+    lst = [3, 7, 2, 44, 11, 99, 23, 55]
+    mn, mx = min_max(lst)
+    print(f'Min = {mn} Max = {mx}')
 
 if __name__ == "__main__":
     main()

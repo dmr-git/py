@@ -8,7 +8,6 @@ __pycache__/
 *~
 *.sw[a-p]
 .DS_Store
-.swp
 [._]*.s[a-v][a-z]
 
 # VIM Session
@@ -25,7 +24,7 @@ tags
 [._]*.un~
 
 # VS Code
-.vscode/
+.vscode/**
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json

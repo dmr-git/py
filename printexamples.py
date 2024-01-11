@@ -4,6 +4,9 @@
 # Filename: printexamples.py
 
 import solarized as c
+from drutils import banner
+
+banner("Print Format Examples", "*")
 
 print("""Dennis says, "I'd say that rPI is fun!".""")
 print("This is one line.\nThis is a second line using a \\n character.")
@@ -37,3 +40,10 @@ print(c.r + "Hello", c.b + "World\n" + c.reset)
 nums = [1234.643, 754.3, 2.2, 223435454.223, 65.888]
 for num in nums:
     print(f"{num:15,.2f}")
+
+print("")
+args = ['cat', 'dog', 'moose']
+print(args)
+print(*args)
+kwargsForPrint = {'sep' : '-'}
+print(*args, **kwargsForPrint)
