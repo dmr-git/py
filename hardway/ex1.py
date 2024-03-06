@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-print("Hello World.")
-print("Hello again.")
+print("Hello World!")
+print("Hello Again")
 print("I like typing this.")
 print("This is fun.")
 print("Yay! Printing.")
-print("I'd much rather you 'not'.")
+# print("I'd much rather you 'not'.")
 print('I "said" do not touch this.')
-print("This is yet another line.")
+print("Making the script print another line.")
