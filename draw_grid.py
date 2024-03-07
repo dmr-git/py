@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# excercise 3.3 from ThinkPython .pdf book
+# exercise 3.3 from ThinkPython.pdf book
 
 
 def draw_col_sep(col_width):

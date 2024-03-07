@@ -16,7 +16,7 @@ def main():
     bday = get_date()
     print(bday)
 
-    lst = [3, 7, 2, 44, 11, 99, 23, 55]
+    lst = [3, 7, 2, 44, 11, 200, 99, 23, 55]
     mn, mx = min_max(lst)
     print(f'Min = {mn} Max = {mx}')
 

@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 
-# Filename: dice.py
 # Author: DMR
 
 # This program simulates dice throws until a quadruple 4 is thrown
-#
 
 import random
 
@@ -17,7 +15,6 @@ while True:
     dice4 = random_number = random.randint(1, 6)
     total = dice1 + dice2 + dice3 + dice4
     num_rolls = num_rolls + 1
-    print(dice1, "  ", dice2, "  ", dice3, " ", dice4, " ", total)
     if (dice1 == 4) and (dice2 == 4) and (dice3 == 4) and (dice4 == 4):
         break
-print(num_rolls)
+print(f"It took {num_rolls} rolls to roll three 4's")
