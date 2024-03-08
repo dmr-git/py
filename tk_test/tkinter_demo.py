@@ -10,10 +10,8 @@ label = tkinter.Label(root, text="Hello from TKinter")
 label.pack()
 text = tkinter.Entry(root)
 
-
 def buttonclick():
     text.get()
-
 
 button = tkinter.Button(root, text="Enter something: ", command=buttonclick)
 button.pack(side="left")
