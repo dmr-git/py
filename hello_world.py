@@ -1,3 +1,3 @@
 #!/usr/bin/env python3
-message = "Hello Python world!"
+message = "Hello world!"
 print(message)

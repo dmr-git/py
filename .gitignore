@@ -39,3 +39,6 @@ tags
 
 # charts
 *.svg
+
+# virtual environment
+.venv/
