@@ -42,3 +42,6 @@ tags
 
 # virtual environment
 .venv/
+
+# .txt files
+*.txt

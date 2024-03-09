@@ -4,7 +4,6 @@ import numpy as np
 import pandas as pd
 import os
 
-
 my_array = np.random.rand(3)
 print("my_array:")
 print(my_array)
