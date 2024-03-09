@@ -45,3 +45,4 @@ tags
 
 # .txt files
 *.txt
+!requirements.txt
