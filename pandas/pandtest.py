@@ -24,7 +24,7 @@ print("my_series with labels:")
 print(my_series)
 print(type(my_series))
 print(f'my_series["Second"] = {my_series["Second"]}')
-print(f"my_series[1] = {my_series[1]}")
+print(f"my_series.iloc[1] = {my_series.iloc[1]}")
 print(f"my_series.index = {my_series.index}")
 print()
 
