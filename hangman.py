@@ -3,7 +3,7 @@
 # Filename: hangman.py
 # Author: DMR
 
-# this is a game of hangman
+# This is a game of hangman
 
 import random
 
