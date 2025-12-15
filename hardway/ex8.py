@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 formatter = "{} {} {} {}"
 
 print(formatter.format(1, 2, 3, 4))
